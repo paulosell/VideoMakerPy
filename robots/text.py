@@ -6,7 +6,7 @@ import spacy
 class Text:
 
     def fetchContentFromWikipedia(self, searchTerm):
-        algorithmiaAutenticaded = Algorithmia.client('simFwP43whs7NkfjT3T7uw7jbFX1')
+        algorithmiaAutenticaded = Algorithmia.client('')
         wikipediaAlgorithm = algorithmiaAutenticaded.algo('web/WikipediaParser/0.1.2')
         query = {
                 "articleName": searchTerm,
